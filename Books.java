@@ -3,13 +3,13 @@ public class Books {
     private  int numberOfPages;
     //private List<Author> myList;
     private double rating;
-    private Author myAuthorList;
+    private Author myAuthorInBook;
 
-    public Books(String name, int numberOfPages, double rating, Author myAuthorList) {
+    public Books(String name, int numberOfPages, double rating, Author myAuthorInBook) {
         this.name = name;
         this.numberOfPages = numberOfPages;
         this.rating = rating;
-        this.myAuthorList = myAuthorList;
+        this.myAuthorInBook = myAuthorInBook;
     }
 
     public String getName() {
@@ -25,8 +25,8 @@ public class Books {
         return rating;
     }
 
-    public Author getMyAuthorList() {
-        return myAuthorList;
+    public Author getMyAuthorInBook() {
+        return myAuthorInBook;
     }
 
     public void setName(String name) {
@@ -41,13 +41,13 @@ public class Books {
         this.rating = rating;
     }
 
-    public void setMyAuthorList(Author myAuthorList) {
-        this.myAuthorList = myAuthorList;
+    public void setMyAuthorInBook(Author myAuthorInBook) {
+        this.myAuthorInBook = myAuthorInBook;
     }
 
     @Override
     public String toString() {
         return "Cartea se numeste " + name + ", are " + numberOfPages + " pagini, rating de " + rating +
-                " si este scrisa de " + myAuthorList.getName();
+                " si este scrisa de " + myAuthorInBook.getName();
     }
 }
